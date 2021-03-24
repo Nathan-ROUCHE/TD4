@@ -74,3 +74,18 @@ int main(int argc, char **argv) {
 
   return 0;
 }
+
+/*int main(int argc, char **argv) {
+  int fd_out = open(argv[1], O_WRONLY | O_CREAT | O_TRUNC, 0644);
+  if (fd_out < 0) {
+    perror(argv[1]);
+    exit(1);
+  }
+
+  for(int i = 0; i < 1234; i++) {
+    write(fd_out, "bonjour", 7);
+  }
+
+  close(fd_out);
+  return 0;
+}*/
